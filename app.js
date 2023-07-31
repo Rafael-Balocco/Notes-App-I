@@ -1,10 +1,7 @@
-const validator = require('validator')
+const chalk = require ('chalk')
 
 const getnotes = require('./notes')
 
 const msg = getnotes()
 
-console.log(msg)
-
-console.log(validator.isURL('http://mead.io'))
-
+console.log(chalk.green.bold.underline('Success'));
